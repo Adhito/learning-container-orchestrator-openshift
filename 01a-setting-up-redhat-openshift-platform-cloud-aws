@@ -1,0 +1,7 @@
+1. Required IAM access as follow 
+-
+- 
+
+2. Reccomended AWS Instance for Master and Worker Nodes
+- 1x t4g.xlarge (Manager)
+- 2x t4g.large  (Worker) 
