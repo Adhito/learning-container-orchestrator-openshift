@@ -1,5 +1,6 @@
 # Project Learning CRC On Baremetal Machine
 
+
 ### **Stage 1: Introduction to Code Ready Container (CRC)**
 ---
 **Sub-Stage 1.1: Differences between CRC and OCP**
@@ -7,6 +8,11 @@
 - Please do note that the OpenShift Container Platform cluster is ephemeral 
 - The CRC will use single node which behaves as both a control plane and worker node.
 - The cluster uses the  **172**  address range. This can cause issues when, for example, a proxy is run in the same address space.
+<br />
+<br />
+
+
+
 
 ### **Stage 2: Minimum Requirements**
 ---
@@ -20,6 +26,10 @@ When installing CRC here are the requirement that need to be full-filled before 
 |RAM             	| 9 GB            				| 16 GB            			  |
 |Storage          	| 35 GB							| 100 GB					  | 
 |Windows          	| Windows 11 Pro (Hyper-V Enabled) 				| Windows 11 Pro (Hyper-V Enabled)						  | 
+<br />
+<br />
+
+
 
 
 ### **Stage 3: Setting Up CRC**
@@ -29,16 +39,17 @@ When installing CRC here are the requirement that need to be full-filled before 
 - Download the  [latest release of Red Hat OpenShift Local](https://console.redhat.com/openshift/create/local)  for your platform.
 - On Microsoft Windows, extract the contents of the archive.
 - On macOS or Microsoft Windows, run the guided installer and follow the instructions.
-
+<br />
+<br />
 
 **Sub-Stage 3.2: ## Setup The  Red Hat OpenShift Local**
 
 - Prerequisites : 
 	- Before running the CRC setup please make sure you are not running on an **elevated command prompt** otherwise CRC might not start.
-	- Allow/Whitelist firewall connection from CRC either by adding it manually or accepting UAC prompt when asked  
-	[ INSERT PICTURE ] - Windows Firewall Settings
+	- Allow/Whitelist firewall connection from CRC either by adding it manually or accepting UAC prompt when asked
+ 	- [ INSERT PICTURE ] - Windows Firewall Settings
 	- Allow/Whitelist CRC process from active AV or EDR
-	[ INSERT PICTURE ] - Microsoft Defender Settings
+	- [ INSERT PICTURE ] - Microsoft Defender Settings
 	- During the CRC setup please ensure you are not connected to VPN and the network is stable in order to download the CRC image.
 	- For the OpenShift preset, ensure that you have a valid OpenShift user pull secret. Copy or download the pull secret from the Pull Secret section of the [Red Hat OpenShift Local page on the Red Hat Hybrid Cloud Console](https://console.redhat.com/openshift/create/local).
 - Once the installation is complete initialize the CRC with the following command : 
@@ -46,7 +57,8 @@ When installing CRC here are the requirement that need to be full-filled before 
     ```bash
     $ crc setup
     ```
-
+<br />
+<br />
 
 
 **Sub-Stage 3.3: ## Configuring The Red Hat OpenShift Local**
@@ -73,8 +85,8 @@ When installing CRC here are the requirement that need to be full-filled before 
     ```bash
     $ crc config view
     ```
-
-
+<br />
+<br />
 
 **Sub-Stage 3.4: ## Starting The Red Hat OpenShift Local**
 
@@ -82,9 +94,9 @@ When installing CRC here are the requirement that need to be full-filled before 
     ```bash
     $ crc start
     ```
-- When the crc start is initiated, the console will ask the pull secret, you can copy the pull secret from the Redhat Hybrid Cloud Console and paste it on the console
+- When the crc start is initiated, the console will ask the pull secret, you can copy the pull secret from the Redhat Hybrid Cloud Console and paste it on the console <br />
 	- [ INSERT PICTURE ] - Redhat Hybrid Cloud Console Pull Secret
-	- [ INSERT PICTURE ] - Terminal Asking For Pull Secret	
+	- [ INSERT PICTURE ] - Terminal Asking For Pull Secret 
 	- 
 - Alternatively you can also pass the full path to the `pull-secret` file you downloaded before in the command line to avoid having to paste it during the install:
     ```bash
@@ -111,3 +123,5 @@ When installing CRC here are the requirement that need to be full-filled before 
 	  $ eval $(crc oc-env)
 	  $ oc login -u developer https://api.crc.testing:6443
 	```
+<br />
+<br />
