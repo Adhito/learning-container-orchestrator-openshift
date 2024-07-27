@@ -1,5 +1,4 @@
-# Project Learning OpenShift Local / Code Ready Container (CRC) On A Homelab, PC, Workstation
-
+# Project Learning OpenShift Local / Code Ready Container (CRC)
 
 ### **Stage 1: Introduction to Code Ready Container (CRC)**
 ---
