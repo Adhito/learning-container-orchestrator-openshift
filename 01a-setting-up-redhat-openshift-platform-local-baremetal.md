@@ -141,5 +141,15 @@ When installing CRC here are the requirement that need to be full-filled before 
     $ crc setup
     $ crc start
     ```
+**Post-Stage 1.1: Moving CRC Data Location With Environment Variable Override**
 
+- Before creating the CRC cluster run the following command
+    ```bash
+    $ Set-Variable -Name HOME -Value D:\Programming-Environment-01\VM-OpenShift-CRC -Force
+    ```
+- Create the crc cluster with the setup & run command
+    ```bash
+    $ crc setup
+    $ crc start
+    ```
 
