@@ -124,3 +124,22 @@ When installing CRC here are the requirement that need to be full-filled before 
 	```
 <br />
 <br />
+
+
+### **Post-Stage Installation : Moving CRC VM Location from C: Drive onto other drive**
+---
+**Post-Stage 1.0: Moving CRC Data Location With MKLink**
+
+- Before creating the symlink/mklink please esure that .crc folder have not been created before creating the link( By default the .crc is located at C:\Users\UserName\.crc )
+- Create the .crc folder at the desired location, in this example we will move the .crc onto D:\Programming-Environment-01\VM-OpenShift-CRC\.crc
+- Create the symlink/mklink with the following command :
+    ```bash
+    $ mklink /J C:\Users\Adhito\.crc D:\Archive\Programming-Environment-01\VM-OpenShift-CRC\.crc
+    ```
+- Create the crc cluster with the setup & run command
+    ```bash
+    $ crc setup
+    $ crc start
+    ```
+
+
