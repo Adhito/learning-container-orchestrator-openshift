@@ -41,7 +41,7 @@ When installing CRC here are the requirement that need to be full-filled before 
 
 ### **Openshift CRC / Openshift Local Installation & Setup**
 
-- For detailed instruction please refer to this documentation [TBA](https://github.com/Adhito/learning-container-orchestrator-openshift/blob/main/01a-setting-up-redhat-openshift-platform-local-baremetal.md) 
+- For detailed instruction please refer to this documentation [RedHat Openshift On Cloud AWS Installation Guide - TBA](https://github.com/Adhito/learning-container-orchestrator-openshift/blob/main/01a-setting-up-redhat-openshift-platform-local-baremetal.md) 
 - Additional Notes - 0001
 - Additional Notes - 0002
 <br />
